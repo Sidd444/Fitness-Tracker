@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex justify-between ml-1">
+      <div class="font-bold">9:41</div>
+      <div class="flex justify-end gap-1 mr-1">
+        <div><i class="fa fa-solid fa-signal"></i></div>
+        <div><i class="fa fa-solid fa-wifi"></i></div>
+        <div><i class="fa fa-solid fa-battery-full"></i></div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <form class="bg-white p-6 rounded-lg w-96 gap-1.5">
+        <div class="flex justify-center mb-6">
+          <h1 class="font-bold text-3xl">Create An Account</h1>
+        </div>
+        <input
+          id="name1"
+          class="border bg-gray-100 rounded-lg px-3 py-2 mb-3 w-full"
+          type="text"
+          placeholder="First Name"
+          required
+        />
+        <input
+          id="name2"
+          class="border bg-gray-100 rounded-lg px-3 py-2 mb-3 w-full"
+          type="text"
+          placeholder="Last Name"
+          required
+        />
+        <input
+          id="name3"
+          class="border bg-gray-100 rounded-lg px-3 py-2 mb-3 w-full"
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          id="name4"
+          class="border bg-gray-100 rounded-lg px-3 py-2 mb-3 w-full"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <p class="text-sm text-gray-600">
+          <input id="check" type="checkbox" /> By proceeding, I agree to all
+          <span class="underline text-sm text-blue-800">T&C</span> and
+          <span class="underline text-sm text-blue-800">Privacy Policy</span>
+        </p>
+        <button
+          id="create-account"
+          class="text-white bg-blue-500 w-full rounded-lg h-10 mt-8"
+        >
+          Create Account
+        </button>
+      </form>
+    </div>
+
+    <div class="flex justify-center items-center gap-1.5 mt-3 ml-1 mr-1">
+      <hr class="w-full border-gray-400" />
+      <p>or</p>
+      <hr class="w-full border-gray-400" />
+    </div>
+    <div class="flex justify-center gap-4 mt-4">
+      <div class="border border-gray-500 p-1">
+        <img
+          class="h-10 w-10"
+          src="https://th.bing.com/th/id/OIP.D6P-BO32wCApcPIIjt6p5wAAAA?rs=1&pid=ImgDetMain"
+          alt="google logo"
+        />
+      </div>
+      <div class="border border-gray-500 p-1">
+        <img
+          class="h-10 w-10"
+          src="https://unlockscheveningen.nl/wp-content/uploads/2021/11/facebookkopie.png"
+          alt="facebook logo"
+        />
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-8">
+      <p>
+        Already have an account?<button
+          id="login"
+          class="underline text-blue-700"
+        >
+          Login
+        </button>
+      </p>
+    </div>
+    <script>
+      document.getElementById("login").addEventListener("click", function () {
+        window.location.href = "fourth.html";
+      });
+      document
+        .getElementById("create-account")
+        .addEventListener("click", function () {
+          if (
+            document.getElementById("check").checked &&
+            document.getElementById("name1").value !== "" &&
+            document.getElementById("name2").value !== "" &&
+            document.getElementById("name3").value !== "" &&
+            document.getElementById("name4").value !== ""
+          )
+            window.location.href = "fourth.html";
+          else if(!document.getElementById("check").checked)
+            alert(
+              "Please Agree To Our Terms and Conditions before creating an Account"
+            );
+        });
+    </script>
+  </body>
+</html>

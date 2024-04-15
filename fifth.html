@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fifth Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex justify-between ml-1">
+      <div class="font-bold">9:41</div>
+      <div class="flex justify-end gap-1 mr-1">
+        <div><i class="fa fa-solid fa-signal"></i></div>
+        <div><i class="fa fa-solid fa-wifi"></i></div>
+        <div><i class="fa fa-solid fa-battery-full"></i></div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <form class="bg-white p-6 rounded-lg w-96 gap-1.5">
+        <div class="flex justify-center mb-6">
+          <h1 class="font-bold text-3xl">What Are Your Goals?</h1>
+        </div>
+        <div class="flex justify-between w-full bg-gray-200 px-2 py-2 rounded-lg my-3">
+            <p>Weight Loss</p>
+            <input
+          class="border bg-gray-100 rounded-lg px-3 py-2"
+          type="checkbox"
+        />
+        </div>
+        <div class="flex justify-between w-full bg-gray-200 px-2 py-2 rounded-lg my-3">
+            <p>Muscle Gain</p>
+            <input
+          class="border bg-gray-100 rounded-lg px-3 py-2"
+          type="checkbox"
+        />
+        </div>
+        <div class="flex justify-between w-full bg-gray-200 px-2 py-2 rounded-lg my-3">
+            <p>Flexibility And Mobility</p>
+            <input
+          class="border bg-gray-100 rounded-lg px-3 py-2"
+          type="checkbox"
+        />
+        </div>
+        <div class="flex justify-between w-full bg-gray-200 px-2 py-2 rounded-lg my-3">
+            <p>General Fitness</p>
+            <input
+          class="border bg-gray-100 rounded-lg px-3 py-2"
+          type="checkbox"
+        />
+        </div>
+        <div class="flex justify-between w-full bg-gray-200 px-2 py-2 rounded-lg my-3">
+            <p>Event Specific Training</p>
+            <input
+          class="border bg-gray-100 rounded-lg px-3 py-2"
+          type="checkbox"
+        />
+        </div>
+        <div class="flex justify-between w-full bg-gray-200 px-2 py-2 rounded-lg my-3">
+            <p>Mindfullness and Mental Health</p>
+            <input
+          class="border bg-gray-100 rounded-lg px-3 py-2"
+          type="checkbox"
+        />
+        </div>
+        
+        <button id="next" class="text-white bg-blue-500 w-full rounded-lg h-10 mt-40">
+          Confirm
+        </button>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("next").addEventListener("click", (event)=> {
+        event.preventDefault();
+        window.location.href = "sixth.html";
+      });
+    </script>
+  </body>
+</html>

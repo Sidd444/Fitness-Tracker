@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex justify-between ml-1">
+      <div class="font-bold">9:41</div>
+      <div class="flex justify-end gap-1 mr-1">
+        <div><i class="fa fa-solid fa-signal"></i></div>
+        <div><i class="fa fa-solid fa-wifi"></i></div>
+        <div><i class="fa fa-solid fa-battery-full"></i></div>
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <button id="skip" class="underline mt-2 mr-10 text-blue-700 text-xl">skip</button>
+    </div>
+    <div class="flex justify-center">
+      <img
+        class="h-96"
+        src="https://th.bing.com/th/id/OIP.qpB3o7YC-2ZyMpbhK9SMmQAAAA?rs=1&pid=ImgDetMain"
+        alt="running man"
+      />
+    </div>
+    <div class="flex items-center flex-col">
+      <h2 class="text-2xl font-bold mb-3">Track Your Goal</h2>
+      <p class="max-sm:w-80 text-slate-600">
+        Don't worry if you have trouble determining your goals. We can help you
+        determine your goals and track your goals.
+      </p>
+    </div>
+    <div class="flex justify-end">
+      <button
+        id="next"
+        class="text-3xl font-bold rounded-full bg-sky-700 text-white mr-10 w-16 h-16 mt-8 pb-1"
+      >
+        >
+      </button>
+    </div>
+    <script>
+      document.getElementById("next").addEventListener("click",()=> {
+        window.location.href = "second.html";
+      });
+      document.getElementById("skip").addEventListener("click",()=> {
+        window.location.href = "second.html";
+      });
+    </script>
+  </body>
+</html>
